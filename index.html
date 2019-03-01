@@ -48,9 +48,9 @@
 
     document.getElementById('clicker').addEventListener('click', function () {
       const s = document.getElementById('guest').value
-      const i = parseString(document.getElementById('petname').value)
+      const i = document.getElementById('petname').value
      
-     document.getElementById('result').innerHTML = s+i
+      document.getElementById('result').innerHTML = s+i
     })
 
     console.log('SCRIPT END')
