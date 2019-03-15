@@ -16,14 +16,15 @@
   <main class="container-fluid">
 
     <h1>JavaScript for interactive apps!</h1>
+    <h2>Given count of developers and number of tasks to complete, display average tasks per developer</h2>
     <h3>Right-click / Inspect, then select console</h3>
 
-    <p>Enter your name:
-      <input id="guest" type="text" value="Harshith">
+    <p>Enter your input1:
+      <input id="input1" type="number" >
     </p>
 
-    <p>Enter petname:
-      <input id="firsttext" type="text" value="Rocky">
+    <p>Enter input2:
+      <input id="input2" type="number" >
     </p>
 
     
@@ -39,18 +40,18 @@
 
     console.log('Declare testable functions.....................')
 
-    function add(x, y) {
-      return x + y
+    function division(x, y) {
+      return x / y
     }
-    console.log('Defined add=' + add)
+    console.log('Defined division=' + division)
 
     console.log('Declare event listeners .......................')
 
     document.getElementById('clicker').addEventListener('click', function () {
-      const s = document.getElementById('guest').value
-      const i = document.getElementById('petname').value
+      const s = document.getElementById('input1').value
+      const i = document.getElementById('input2').value
      
-      document.getElementById('result').innerHTML = s+i
+      document.getElementById('result').innerHTML = s/i
     })
 
     console.log('SCRIPT END')
